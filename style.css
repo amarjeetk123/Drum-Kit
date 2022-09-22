@@ -1,0 +1,92 @@
+:root{
+    --bg_color : #03203C ;
+    --text_color : #00fff1 ;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+   background-color: var(--bg_color);
+   padding: 40px 10px;
+    /* background:rgba(255, 255, 255, 0.1) ; */
+   
+}
+.main{
+
+    text-align: center;
+    border: 3px solid aqua;
+   padding: 20px 10px;
+   
+}
+.heading{
+    font-size: 70px;
+    color: var(--text_color);
+    margin: 50px 0px;
+}
+.drum_btn{
+    height: 150px;
+    width: 150px;
+    font-size: 70px;
+    border: none;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1) , 1px 1px 3px rgba(0, 0, 0, 0.8);
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+.s , .j , .l{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* Or, .drum_btn.btn_pressed instead of  */
+ .btn_pressed{     /*  this class is add through js */
+    opacity: 0.5;
+    box-shadow: -1px -1px 3px var(--bg_color);  
+}
+
+.volum{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volume_slider{
+    appearance: none;
+    background-color: var(--text_color);
+    height: 7px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+#volume_slider::-webkit-slider-thumb{
+    appearance: none;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color:var(--text_color);
+}
+.icon{
+    color: var(--text_color);
+   
+}
+.last_btns{
+    margin-top: 20px;
+}
+#auto{
+   border-radius: 2px;
+   border: none;
+    font-size: 23px;
+    color: var(--text_color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 12px 30px;
+    background-color: var(--bg_color);
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1) , 1px 1px 3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#auto:hover{
+    color: var(--bg_color);
+    background-color: var(--text_color);
+    transition: 0.4s;
+}
